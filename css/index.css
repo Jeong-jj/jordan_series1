@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tiro+Bangla:ital@0;1&display=swap');
+
+/*
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Tiro Bangla', serif;
+*/
+/* <i class="fa-solid fa-bars"></i> */
+
+body {
+  /* position: relative; */
+  overflow-y: hidden;
+}
+
+
+/* navigation */
+#nav {
+  position: absolute; top: 0; left: 100%; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.648);
+  z-index: 999999999;
+  transition: all 1s;
+}
+#nav.on {left: 0;}
+#nav .openBtn {
+  padding: 5px;
+  font-size: 40px;
+  position: absolute; top: 30px; right: 40px;
+  cursor: pointer;
+}
+#nav .openBtn.on {display: none;}
+#nav .menu {
+  width: 600px;
+  padding: 50px 180px 100vh 150px;
+  background-color: rgb(233, 63, 63); 
+  position: absolute; top: 0; left: 100%;
+  transition: all 1s;
+}
+#nav .menu.on {left: 0;}
+#nav .menu .closeBtn {
+  position: absolute; top: 50px; left: 60px;
+  font-size: 60px;
+  cursor: pointer;
+}
+#nav .menu .depth1 {padding-top: 100px;}
+#nav .menu .depth1 li {
+  padding: 5px; margin: 5px;
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+/* Title */
+#section1 {margin: 90px 0 130px;}
+#section1 .title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 70px; color: #f00;
+  text-align: center;
+}
+
+
+
+/* Site button */
+#section2 .btnBox {
+  display: flex;
+  align-items: center; justify-content: center;
+}
+#section2 .btnBox > div {
+  z-index: 999999;
+  display: flex;
+  align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#section2 .toNike {
+  margin-right: 150px;
+}
+#section2 .toNike img {padding-top: 20px;}
+#section2 .toJordan img {padding-bottom: 10px;}
+
+
+
+/* footer */
+#footer {
+  margin: 160px 0 100px;
+  font-family: 'Tiro Bangla', serif;
+}
+#footer .rights {text-align: center;}

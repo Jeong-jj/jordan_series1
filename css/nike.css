@@ -1,0 +1,122 @@
+/* section1 */
+#section1 {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Bebas Neue', cursive;
+}
+#section1 .sect1Title {
+  padding: 160px 0px 120px 800px;
+  text-align: center;
+  font-size: 50px;
+}
+#section1 .sect1Title .nikeLogo img {
+  text-align: center;
+  width: 350px;
+}
+#section1 .jordan1 {
+  position: absolute; bottom: 10px; left: 10px;
+  z-index: 9999;
+}
+#section1 .jordan1 img {
+  width: 850px;
+}
+#section1 .effect {
+  width: 900px;
+  position: absolute; bottom: -5px; left: 50px;
+}
+
+.textBanner marquee {
+  padding: 12px 0;
+  font-size: 17px; font-weight: bold;
+}
+
+
+/* section2 */
+#section2 {background-color: #000;}
+#section2 .sect2Title {
+  background-color: rgb(228, 48, 48);
+  padding: 40px 50px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Tiro Bangla', serif;
+  font-weight: bold;
+}
+#section2 .sect2Title h1 {font-size: 40px;}
+#section2 .sect2Title h3 {font-size: 25px; padding-top: 10px;}
+#section2 .sect2Title h3 i {padding: 0 15px;}
+
+#section2 .stageBox {
+  padding: 250px 0 0px;
+  margin: 30px 20px;
+  background-color: #000;
+  background-image: url(../images/nike_logo2.png);
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  position: relative;
+}
+#section2 .stageBox .stage img {
+  display: block;
+  width: 500px; margin: 0 auto;
+}
+#section2 .stageBox .question {
+  display: flex; justify-content: center;
+}
+#section2 .stageBox .question img {
+  display: block;
+  width: 300px;
+  position: absolute; top: 40px;
+
+  animation-name: bigger;
+  animation-direction: alternate;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+#section2 .stageBox .on {
+  display: flex; justify-content: center;
+}
+#section2 .stageBox .on img {
+  display: block;
+  width: 550px;
+  position: absolute; top: 40px;
+}
+
+@keyframes bigger {
+  from {transform: scale(1.0);}
+  to {transform: scale(1.1);}
+}
+
+/* #section2 .options {width: 100vw;} */
+#section2 .options .slideBox {
+  border-top: 4px solid #fff;
+  margin: 0 30px;
+  padding: 70px 50px 100px;
+}
+#section2 .options .slideBox .slide {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#section2 .options .slideBox .jordanShoes img {width: 453px; height: 271.8px}
+#section2 .options .slideBox .darkmocha img {width: 377px; height: 251px; margin: auto;}
+
+#section2 .options .slick-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  font-size: 60px; color: #fff; cursor: pointer;
+  background: none;
+  border: none;
+}
+#section2 .options .slick-arrow.prev {left: 0px; z-index: 9999;}
+#section2 .options .slick-arrow.next {right: 0px;}
+
+#section2 .options .slick-dots {position: absolute; bottom: 50px;
+  left: 50%; transform: translateX(-50%);}
+#section2 .options .slick-dots li {display: inline-block; margin: 0 5px;}
+#section2 .options .slick-dots li button {
+  width: 30px; height: 30px;
+  border: 3px solid #999; border-radius: 50%;
+  background: #fff; color: #fff;
+  cursor: pointer;
+}
+#section2 .options .slick-dots li.slick-active button {border: 3px solid #fff; background: #f00; color: #f00;}
